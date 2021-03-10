@@ -22,4 +22,5 @@
     "node_modules/": true,
     ".vscode/": true
   },
+  "editor.tabSize": 2
 }
