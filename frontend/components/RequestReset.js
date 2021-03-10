@@ -18,7 +18,7 @@ export default function RequestReset() {
   const { inputs, handleChange, resetForm } = useForm({
     email: '',
   });
-  const [signup, { data, loading, error }] = useMutation(
+  const [requestReset, { data, loading, error }] = useMutation(
     REQUEST_RESET_MUTATION,
     {
       variables: inputs,
@@ -29,7 +29,7 @@ export default function RequestReset() {
   async function handleSubmit(e) {
     e.preventDefault();
     // Send the email and password to the graphqlAPI
-    const res = await signup().catch(console.error);
+    const res = await requestReset().catch(console.error);
     console.log(res);
     console.log(data, loading, error);
     resetForm();
