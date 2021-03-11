@@ -22,5 +22,6 @@
     "node_modules/": true,
     ".vscode/": true
   },
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "javascript.autoClosingTags": false
 }
